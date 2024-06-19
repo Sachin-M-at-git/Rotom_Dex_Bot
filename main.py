@@ -169,4 +169,4 @@ async def run_pyrogram():
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.create_task(run_pyrogram())
-    web_app.run(loop=loop, host="127.0.0.1", port=8000)
+    web_app.run(loop=loop, host="0.0.0.0", port=8000)
