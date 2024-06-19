@@ -9,7 +9,6 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, ForceReply, InlineKeyboardMarkup, \
     InlineKeyboardButton
 
-
 load_dotenv()
 api_id = os.environ.get('API_ID')
 api_hash = os.environ.get('API_HASH')
@@ -147,6 +146,11 @@ async def make_square(image_url):
     output.seek(0)  # Reset the pointer to the beginning of the BytesIO object
 
     return output
+
+
+@web_app.get("/")
+def index():
+    return {"message": "Hello World"}
 
 
 @web_app.route('/webhook', methods=['POST'])
