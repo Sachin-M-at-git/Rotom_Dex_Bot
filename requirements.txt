@@ -1,6 +1,5 @@
 pyrogram
 TgCrypto
-Quart
 https://github.com/KurimuzonAkuma/pyrogram/archive/dev.zip
 requests
 Pillow
