@@ -4,7 +4,6 @@ import requests
 from dotenv import load_dotenv
 from PIL import Image
 from io import BytesIO
-from quart import Quart, request
 from pyrogram import Client, filters
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, ForceReply, InlineKeyboardMarkup, \
     InlineKeyboardButton
